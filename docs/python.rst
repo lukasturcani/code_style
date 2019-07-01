@@ -57,8 +57,8 @@ fit.
 3. Function calls.
 ------------------
 
-Function calls should occur on a single line, with 3 or fewer
-parameters, may be called on a single line without any parameter names.
+Function calls with 3 or fewer parameters, may be done on a single line
+without any parameter names.
 
 .. code-block:: python
 

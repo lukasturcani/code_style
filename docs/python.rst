@@ -30,6 +30,7 @@ Comprehensions should be done on a single line, if they fit.
     list1 = [2*x for x in range(20)]
     list2 = [2*x for x in range(20) if 2*x % 4 == 0]
     set1 = {2*x for x in range(20)}
+    dict1 = {key: value for key, value in zip(range(10), (10, 20))}
 
 If the the comprehension does not fit on a single line, try placing
 the opening and closing brackets on separate lines.
@@ -39,6 +40,10 @@ the opening and closing brackets on separate lines.
     some_very_long_variable_name = [
         some_element for some_element in some_long_container_name
     ]
+
+    some_other_very_long_variable_name = {
+        key: value for key, value in zip(range(10), range(10, 20))
+    }
 
 If the comprehension still does not fit, split it so that each
 Python keyword begins on a new line, with the exception of
@@ -53,6 +58,11 @@ fit.
         if some_very_long_element_name == 20
         and some_very_long_element_name % 2 == 1
     ]
+
+    some_other_very_long_variable_name = {
+        key_name: value_name
+        for key_name, value_name in zip(range(10), range(10, 20))
+    }
 
 3. Function calls.
 ------------------

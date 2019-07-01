@@ -10,18 +10,17 @@ does not state a different preference.
 .. _PEP257: https://www.python.org/dev/peps/pep-0257/
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :numbered:
 
-1. Line length.
----------------
+Line length.
+------------
 
 Line length should be at most 71 visible characters, so that it is
 72 with newlines. This ensures that all lines obey PEP8_ and that
 all lines are the same length.
 
-2. Comprehensions.
-------------------
+Comprehensions.
+---------------
 
 Comprehensions should be done on a single line, if they fit.
 
@@ -64,8 +63,8 @@ fit.
         for key_name, value_name in zip(range(10), range(10, 20))
     }
 
-3. Function calls.
-------------------
+Function calls.
+---------------
 
 Function calls, with 3 or fewer parameters, may be done on a single
 line without any parameter names.
@@ -89,8 +88,8 @@ parameter specified by name and on a separate line.
 This keeps everything readable and ensures that parameters are not
 sensitive to order.
 
-4. Function and method definitions.
------------------------------------
+Function and method definitions.
+--------------------------------
 
 Functions and methods should be defined so that they are on a single
 line, if they fit.

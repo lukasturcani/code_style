@@ -1,6 +1,3 @@
-.. contents:: Table of Contents
-
-
 .. _`Python Style Guidelines`:
 
 Python Style Guidelines
@@ -14,6 +11,8 @@ does not state a different preference.
 
 .. toctree::
    :numbered:
+
+.. contents:: Table of Contents
 
 Line length.
 ------------

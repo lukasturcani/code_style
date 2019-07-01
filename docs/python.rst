@@ -12,6 +12,8 @@ does not state a different preference.
 .. toctree::
    :numbered:
 
+.. contents:: Table of Contents
+
 Line length.
 ------------
 

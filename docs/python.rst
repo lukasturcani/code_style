@@ -168,8 +168,11 @@ an empty line.
 Docstring markup.
 -----------------
 
-Docstrings should use `numpy style formatting`_.
-The examples below explains the markup to be used.
+Docstrings should use `numpy style formatting`_. An explanation of
+the markup is provided here_, and this is considered required reading.
+
+The examples below also explain how the markup is used but it is not
+a substitute for reading the linked documents.
 
 .. code-block:: python
 
@@ -177,7 +180,20 @@ The examples below explains the markup to be used.
         '''
         The first line of the docstring.
 
-        When literal, code values are specified they should be between
+        There are two general rules. Use a period in front of a name
+        to create a hyperlink to where that name is documented,
+        for example :class:`.SomeType`. Use a ~ at  the start of a
+        name to remove any preceding names in the compiled
+        documentation, for example
+        :class:`~.module.submodule.SomeType` will only display
+        "SomeType" in the compiled documentation. The modules are
+        added in front of the name to resolve any ambiguity in
+        name resolution, for example if two classes in your library
+        have the same name but are found in different submodules.
+        Periods should only be used in front of names which are part
+        of your own library.
+
+        When literal code values are specified they should be between
         two backticks, for example if I was to say that the default
         value of `param5` is ``12``. Argument names, such as
         `param5` or `param1` are surrounded by a single backtick.
@@ -194,15 +210,16 @@ The examples below explains the markup to be used.
             for i in range(10):
                 print(i**2)
 
-        Sometimes when talking about an attribute in a class we first
+        Sometimes, when talking about an attribute in a class, we
         want to make it clear to the reader what attribute we are
-        referring to exactly so the :attr:`.SomeTypeName.attr_name`
-        syntax is used. However as we continue to refer to
-        :attr:`~.SomeTypeName.attr_name`, it is unnecessary to continue
-        to state the class in front of the attribute, as it should be
-        obvious to the reader by this point, so the ~ can be added to
+        referring as well as the class, so the
+        :attr:`.SomeTypeName.attr_name` syntax is used. However, as we
+        continue to refer to the attribute, it is
+        unnecessary to continue stating the class explicitly in the
+        compiled documentation, so the :attr:`~.SomeTypeName.attr_name`
+        syntax can be used. The ~ can be added to
         remove the class name from the compiled documentation. Use
-        the ~ as appropriate to maximize the readability of the
+        the ~ when appropriate to maximize the readability of the
         compiled documentation.
 
         Parameters
@@ -275,3 +292,4 @@ The examples below explains the markup to be used.
             self.beta = 'b'
 
 .. _`numpy style formatting`: https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html
+.. _here: https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#python-roles

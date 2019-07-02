@@ -197,19 +197,19 @@ spaces should be at the end of the line, not the start.
 Docstrings.
 -----------
 
-Docstrings should open with three single quotes `'''`.
+Docstrings should open and close with three double quotes `"""`.
 The first line of a docstring should always be on the line below
-the opening `'''`. The closing `'''` always needs to be on its own
+the opening `"""`. The closing `"""` always needs to be on its own
 line and preceded by an empty line. The docstring must be followed by
 an empty line.
 
 .. code-block:: python
 
     def some_fn():
-        '''
-        This is a docstring.
+        """
+        Do something.
 
-        '''
+        """
 
         foo()
         return bar(12)
@@ -227,8 +227,8 @@ a substitute for reading the linked documents.
 .. code-block:: python
 
     def some_fn(param1, param2, param3, param4, param5=12):
-        '''
-        The first line of the docstring.
+        """
+        Do something.
 
         There are two general rules. Use a period in front of a name
         to create a hyperlink to where that name is documented,
@@ -312,12 +312,12 @@ a substitute for reading the linked documents.
         :class:`int`
             Returns a number.
 
-        '''
+        """
 
         return 12
 
     class SomeType:
-        '''
+        """
         An example type.
 
         Note that class docstrings should not document the attributes
@@ -335,7 +335,7 @@ a substitute for reading the linked documents.
             preceding with a period and the type name, for example
             :attr:`.SomeOtherType.attribute_name`.
 
-        '''
+        """
 
         def __init__(self):
             self.alpha = 1

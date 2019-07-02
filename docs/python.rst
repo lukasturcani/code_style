@@ -3,8 +3,8 @@
 Python Style Guidelines
 =======================
 
-Style should follow PEP8_ and PEP257_ in cases where this guideline
-does not state a different preference.
+Style should follow PEP8_ and PEP257_ in cases where these guidelines
+do not state a different preference.
 
 .. _PEP8: https://www.python.org/dev/peps/pep-0008/
 .. _PEP257: https://www.python.org/dev/peps/pep-0257/
@@ -68,7 +68,7 @@ the last element too.
         'some_long_key': some_very_long_set_element,
         'another_long_key': some_other_very_long_set_element,
         'key': some_even_very_very_long_set_element,
-        'also_a_key': and_so_on,        
+        'also_a_key': and_so_on,
     }
 
 Comprehensions.

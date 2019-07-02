@@ -21,6 +21,56 @@ Line length should be at most 71 visible characters, so that it is
 72 with newlines. This ensures that all lines obey PEP8_ and that
 all lines are the same length.
 
+Numbers.
+--------
+
+Numbers should always use separators.
+
+.. code-block:: python
+
+    number1 = 1_000
+    number2 = 100_000
+    number3 = 1_000_000
+
+Lists.
+------
+
+:class:`list`, :class:`set`, :class:`dict` objects should be defined
+on a single line, if they fit.
+
+.. code-block:: python
+
+    some_list = [1, 34, 423, 12, 4, 10]
+    some_set = {1, 45, 233, 549}
+    some_dict = {'a': 10, 'b': 20, 'c': 10_000}
+
+They should be defined on a line by line basis otherwise, with opening
+and closing brackets on their own line. A comma should be used after
+the last element too.
+
+.. code-block:: python
+
+    some_list = [
+        some_very_long_list_element,
+        some_other_very_long_list_element,
+        some_even_very_very_long_list_element,
+        and_so_on,
+    ]
+
+    some_set = {
+        some_very_long_set_element,
+        some_other_very_long_set_element,
+        some_even_very_very_long_set_element,
+        and_so_on,
+    }
+
+    some_dict = {
+        'some_long_key': some_very_long_set_element,
+        'another_long_key': some_other_very_long_set_element,
+        'key': some_even_very_very_long_set_element,
+        'also_a_key': and_so_on,        
+    }
+
 Comprehensions.
 ---------------
 

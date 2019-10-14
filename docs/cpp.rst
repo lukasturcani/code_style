@@ -2,3 +2,6 @@
 
 C++ Style Guidelines
 =====================
+
+Function Declarations
+---------------------

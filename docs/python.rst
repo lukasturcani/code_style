@@ -140,7 +140,7 @@ parameter specified by name and on a separate line.
         param_name1=1,
         param_name2=2,
         param_name3=3,
-        param_name4='4th'
+        param_name4='4th',
     )
 
 This keeps everything readable and ensures that parameters are not
@@ -166,7 +166,7 @@ split so that each parameter is on a separate line. The closing
     def some_function(
         some_very_long_parameter_name1,
         some_very_long_parameter_name2,
-        some_keyword_parameter=12
+        some_keyword_parameter=12,
     ):
         return 12
 

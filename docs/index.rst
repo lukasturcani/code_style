@@ -1,7 +1,6 @@
 Code Style Guidelines
 =====================
 
-
 .. toctree::
     :hidden:
     :caption: Style Guides
@@ -9,3 +8,5 @@ Code Style Guidelines
 
     Python <python>
     C++ <cpp>
+
+Check the sidebar for style guides for the different languages.
